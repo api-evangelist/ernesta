@@ -1,8 +1,27 @@
 aid: ernesta
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ernesta.png
 name: Ernesta
-description: 'Ernesta is a company surfaced as a portfolio company of true-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Ernesta is a direct-to-consumer, custom-sized rug company that lets homeowners
+  and interior-design professionals order high-design rugs made to measure down
+  to the inch. Founded by three Peloton co-founders (John Foley, Hisao Kushi, and
+  Yony Feng) and backed by True Ventures, Addition, and Platform Capital, Ernesta
+  sells online through a Shopify storefront and a growing set of showrooms, and
+  runs a dedicated Trade Program and Trade Portal for designers. Ernesta publishes
+  no public developer API; this API Evangelist profile catalogs the company's
+  consumer and trade web properties plus the discovery, security, and identity
+  signals observable on its public hosts.
 url: https://raw.githubusercontent.com/api-evangelist/ernesta/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Rugs
+- Home
+- Interior Design
+- E-commerce
+- Retail
+- Direct to Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,24 @@ maintainers:
 common:
 - type: Website
   url: https://www.ernesta.com/
+- type: Blog
+  url: https://www.ernestarugs.com/blog
+- type: Support
+  url: https://www.ernestarugs.com/contact-us
+- type: Login
+  url: https://www.ernesta.com/account/login
+- type: PrivacyPolicy
+  url: https://www.ernestarugs.com/privacy-policy
+- type: TermsOfService
+  url: https://www.ernestarugs.com/terms-of-use
+- type: WellKnown
+  url: well-known/ernesta-well-known.yml
+- type: DomainSecurity
+  url: security/ernesta-domain-security.yml
+- type: LLMsTxt
+  url: llms/ernesta-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

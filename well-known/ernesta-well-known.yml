@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://www.ernesta.com/.well-known/*
+host: https://www.ernesta.com
+note: >-
+  Ernesta's storefront runs on Shopify; the OIDC / OAuth authorization-server
+  discovery documents are Shopify's hosted customer-account (New Customer
+  Accounts) authentication surface for this store (issuer
+  https://shopify.com/authentication/71916355889), not a first-party Ernesta
+  developer API. Ernesta publishes no developer API.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: ernesta-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: ernesta-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
